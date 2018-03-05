@@ -4,17 +4,20 @@
 <head>
 	<title>KISEJUU SUSHIS</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="/Styles/style_resto.css"/>
+	<script type="text/javascript" src="Javascript/script.js"></script>
 </head>
 
 <body>
-	<nav><!-- On pourra faire le menu en php -->
+	<nav>
 		<ul>
 			<li><a href="index.html">Accueil</a></li>
 			<li><a href="Content/carte.html">Carte des plats</a></li>
 			<li><a href="Content/Miscellaneous/mentions.html">Mentions légales</a></li>
-			<li><a href='mailto:exemple@mailinator.com'>Contact</a></li>
+			<li><a href='mailto:exemple@mailinator.com' onclick="captcha()">Contact</a></li>
 		</ul>
 	</nav>
+	
+	<input type="button" onclick="infos_nav();" value="Informations sur le navigateur"></input><br/><br/>
+	<img id="back_img" src="Images/logo_kiseijuu.png" onclick="imgSwitch()" />
 </body>
 </html>
